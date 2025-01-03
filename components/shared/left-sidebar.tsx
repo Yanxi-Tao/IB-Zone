@@ -8,6 +8,7 @@ import { UserAccountCard } from '@/components/card/user-account-card'
 import { Badge } from '@/components/ui/badge'
 import { useNotificationCount } from '@/hooks/notification'
 import { formatNumber } from '@/lib/utils'
+import Image from 'next/image'
 
 export const LeftSidebar = () => {
   const pathname = usePathname()
@@ -16,7 +17,13 @@ export const LeftSidebar = () => {
     <div className="sticky top-12 h-[calc(100vh-48px)] flex flex-col justify-between pb-10 pt-4 px-6 border-r">
       <div className="flex flex-col gap-y-3">
         <Link href="/" className="flex justify-center items-center">
-          <p className="text-3xl">IBZN</p>
+          <Image
+            src="/ibzn_logo.png"
+            alt="IBZN"
+            width={80}
+            height={35}
+            className=" my-2"
+          />
         </Link>
         {sidebarNavs.map((nav, index) => {
           const isActive =

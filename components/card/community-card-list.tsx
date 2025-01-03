@@ -52,7 +52,8 @@ export const CommunityCardList = () => {
         />
       </form>
       <div className="h-11" />
-      <div className="flex flex-col space-y-2 pt-2 overflow-auto h-[calc(100vh-270px)]">
+      {/* <div className="flex flex-col space-y-2 pt-2 overflow-auto h-[calc(100vh-270px)]"> */}
+      <div className="grid grid-cols-2 gap-2 pt-2">
         {isSuccess &&
           data.pages.map((page) =>
             page.communities.map((community) => {
@@ -72,17 +73,17 @@ export const CommunityCardList = () => {
               }
             })
           )}
-        {fetchStatus === 'fetching' && (
-          <div className="flex justify-center h-10 my-4">
-            <BeatLoader className="h-10" />
-          </div>
-        )}
-        {!hasNextPage && (
-          <div className="flex items-center h-10 my-4 px-20">
-            <div className="w-full border-b-2" />
-          </div>
-        )}
       </div>
+      {fetchStatus === 'fetching' && (
+        <div className="flex justify-center h-10 my-4">
+          <BeatLoader className="h-10" />
+        </div>
+      )}
+      {!hasNextPage && (
+        <div className="flex items-center h-10 my-4 px-20">
+          <div className="w-full border-b-2" />
+        </div>
+      )}
     </div>
   )
 }
