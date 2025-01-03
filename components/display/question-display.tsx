@@ -149,7 +149,7 @@ export default function QuestionDisplay({
                       className="flex items-center space-x-2"
                     >
                       <AvatarCard
-                        source={null}
+                        source={community.image}
                         name={community.name}
                         className="w-7 h-7 text-sm"
                       />
