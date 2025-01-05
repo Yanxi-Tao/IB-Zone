@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## IB-Zone (IBZN)
 
-## Getting Started
+### Project Description
 
-First, run the development server:
+A Nextjs forum with full-scale user authentication, sub-community creation, image uploading, rich-text editor, and notifications, enabling online experience-sharing and problem-solving!
+
+### Executive Summary
+
+Creating a web-based interactive forum for Pre-IB students, IB students and FIS faculties. In order to help students in DP course selection, facilitate their later success in courses, future career path advice and provide a platform for information exchange and experience sharing. Members may interact constructively in an interest-oriented manner that strengthens our community cohesion.
+
+### Local Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# clone this repo
+git clone https://github.com/Yanxi-Tao/IB-Zone.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# install necessary dependencies
+pnpm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# start development server
+pnpm run dev
